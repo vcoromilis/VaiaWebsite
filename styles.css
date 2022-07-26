@@ -22,7 +22,8 @@
   
   /* Header styling */
   .main-header {
-    text-tranform: uppercase;
+    text-transform: uppercase;
+    font-size: 25px;
     background-color: #E8E8E8;
     text-align: center;
     padding: 15px 0;
@@ -58,6 +59,13 @@
   }
   
   /* Product details */
+  
+  h2 {text-transform: uppercase;
+      font-size: 18px;
+      font: weight 1px;
+      margin-left: 18px;
+  }
+
   li {
     list-style-type: square;
     margin-bottom: 10px;
@@ -131,7 +139,7 @@
   }
   
   .color-option {
- 	width: 20px;
+ 	  width: 20px;
     height:20px;
     cursor: pointer;
     margin-left: 10px;
@@ -142,12 +150,12 @@
   	margin: 0;
   }
 
-  .color-option.opt1 {background-color:blue;}
-  .color-option.opt2 {background-color:red;}
-  .color-option.opt3 {background-color:yellow;}
-  .color-option.opt4 {background-color:green;}
-  .color-option.opt5 {background-color:orange;}
-  .color-option.opt6 {background-color:purple;}
+  .color-option.opt1 {background-color:black;}
+  .color-option.opt2 {background-color:blue;}
+  .color-option.opt3 {background-color:red;}
+  .color-option.opt4 {background-color:yellow;}
+  .color-option.opt5 {background-color:greenyellow;}
+  .color-option.opt6 {background-color:brown;}
   
  
   
