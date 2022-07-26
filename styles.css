@@ -7,13 +7,17 @@
     margin: 50px auto;
     position: relative;
   }
-  img {
+  
+  img.img-post {
     float: left;
+    width: 250px;
   }
-  article {
+  
+  div.container {
     color: 	#000000;
     border: black solid 4px;
     font-family: sans-serif;
+    font-weight: 200;
   }
   
   /* Header styling */
@@ -24,12 +28,10 @@
     padding: 15px 0;
   }
   
-  .price-paragraph{
-    display: inline-block;
-  }
-  
   .price{
+  	display: inline-block;
     font-size: 25px;
+    font-weight: 600;
   }
   
   /* Shipping section */
@@ -37,8 +39,8 @@
     color: #C8C8C8;
     text-transform: uppercase;
     font-weight: 700;
-    margin-bottom: 20px;
     float: right;
+    margin-bottom: 20px;
     margin-top: 4px;
   }
   
@@ -64,6 +66,7 @@
   li:last-child {
     margin-bottom: 15px;
   }
+  
   /* Add to cart section */
   .primary-button {
     width: 100%;
@@ -104,9 +107,16 @@
     background-color: #F00;
     padding: 6px 6px;
     position: absolute;
-    top: -17px;
-    left: -29px;
+    transform: translate( -50%, -50% ); /* Centre the object in the corner */
+    /* transition: font-size 0.5s; */
   }
+  
+  /*
+  .sale:hover {
+  	font-size: 25px;
+  }
+  */
+  
   .more-information-link{
     display: inline-block;
     margin-bottom: 30px;
@@ -114,72 +124,30 @@
 
 .desc{width: 850px;}
 
-  .color-option1 {
-    display: inline-block; 
-    border:black solid 1px;
-    width: 20px;
+/** COLOUR OPTIONS **/
+
+  .color-container {
+  	font-size: 0px;
+  }
+  
+  .color-option {
+ 	width: 20px;
     height:20px;
-    
-    
     cursor: pointer;
-  }
-  .color-option2 {
-    display: inline-block;
-    border:black solid 1px;
-    width: 20px;
     margin-left: 10px;
-    height:20Px;
-    
-    cursor: pointer;
-  }
-
-  .color-option3 {
     display: inline-block;
-    border:black solid 1px;
-    width: 20px;
-    margin-left: 10px;
-    height:20Px;
-
-    cursor: pointer;
+  }
+  
+  .color-option:first-child {
+  	margin: 0;
   }
 
-
-  .color-option4 {
-    display: inline-block;
-    border:black solid 1px;
-    width: 20px;
-    margin-left: 10px;
-    height:20Px;
-
-    cursor: pointer;
-  }
-
-  .color-option5 {
-    display: inline-block;
-    border:black solid 1px;
-    width: 20px;
-    margin-left: 10px;
-    height:20Px;
-
-    cursor: pointer;
-  }
-
-  .color-option6 {
-    display: inline-block;
-    border:black solid 1px;
-    width: 20px;
-    margin-left: 10px;
-    height:20Px;
-
-    cursor: pointer;
-  }
-
-  .color-option1 {background-color:blue;}
-  .color-option2 {background-color:red;}
-  .color-option3 {background-color:yellow;}
-  .color-option4 {background-color:green;}
-  .color-option5 {background-color:orange;}
-  .color-option6 {background-color:purple;}
+  .color-option.opt1 {background-color:blue;}
+  .color-option.opt2 {background-color:red;}
+  .color-option.opt3 {background-color:yellow;}
+  .color-option.opt4 {background-color:green;}
+  .color-option.opt5 {background-color:orange;}
+  .color-option.opt6 {background-color:purple;}
   
  
   
