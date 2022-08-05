@@ -1,0 +1,255 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin:0%;
+  }
+  
+  p {
+    color: #8f8f8f;
+  }
+  
+  /*Containers*/
+  .container-fluid {
+    padding: 7% 15%;
+  }
+  
+  /*Sections*/
+  .colored-section {
+    background-color: #ff5a75;
+    color: #fff;
+  }
+  
+  .white-section {
+    background-color: #fff;
+  }
+  
+  /*Heading styles*/
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 700;
+    text-align:center;
+    margin: 5%;
+    
+  }
+  
+  .big-heading {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    /*text-align: left;
+    margin-left:30%;*/
+  }
+  
+  .section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  
+  /*Navigation Bar*/
+  .navbar {
+    padding: 0 0 4.5rem;
+  }
+  
+  .navbar div.navmenu {
+	position: relative;
+	right: 0px;
+	display: block;
+	white-space: nowrap;		
+	
+  }
+  
+  div.navmenu ul {
+  	display: block;
+  }
+  
+  div.navmenu li {
+  	display: inline-block;
+  }
+  
+  .navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .navbar-light .navbar-brand {
+    color: white;
+   }
+
+.navbar-light .navbar-nav .nav-link {
+  text-align-last: right;
+}
+
+
+  
+  .nav-item {
+    padding-right: 36px;
+    
+  }
+  
+  .nav-link {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
+    color: #ffbfca;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: white;
+    
+}
+  
+  /*Title section*/
+  #title .container-fluid {
+    padding: 3% 15% 7%;
+    text-align: left;
+    color:#fff;
+    height: 100vh;
+  }
+  
+  #title .row {
+  	margin-left: 0px;
+  }
+  
+  .title-content-wrapper {
+  	display: flex;
+  	align-items: stretch;
+  	flex-direction: row;
+  }
+  
+  .title-content-wrapper > .left,
+  .title-content-wrapper > .right {
+  	display: inline-block;
+  	width: 50%;
+  } 
+  
+  button.btn.btn-lg.btn-light.download-button{background-color:#ff5a75;
+    color:#fff;
+  }
+  
+  
+  
+  /*Download buttons*/
+  .download-button {
+    
+    margin: 5% 3% 15% 0;
+  }
+  
+  /*Title image*/
+  .title-image {
+    position: relative;
+    transform: rotate(25deg);
+    width: 60%;
+    left: 50px;
+  }
+  
+  .left .big-heading {
+  	text-align: left;
+  	margin-left: 0;
+  }
+  
+  /*Features section*/
+  #features {
+    position: relative;
+  }
+  
+  #features .col-lg-4 {
+    padding: 5%;
+  }
+  
+  #features i {
+    color: #ef8172;
+    margin-bottom: 1rem;
+  }
+  
+  #features i:hover {
+    color: #ff4c68;
+  }
+  
+  .feature-title {
+    font-size: 1.5rem;
+    
+  }
+  
+  /*Testimonials section*/
+  #testimonials {
+    background-color: #ef8172;
+  }
+  
+  .testimonial-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight:100;
+    padding: 0px 15px;
+    margin: 0px;
+  }
+  
+  .testimonial-image {
+    border-radius: 100%;
+    margin: 10px;
+    width: 10%;
+  }
+  
+  /*Press section*/
+  #press {
+    background-color: #ef8677;
+    padding-bottom: 3%;
+  }
+  
+  .press-logo {
+    margin: 20px 20px 30px;
+    width: 15%;
+  }
+  
+  /*Pricing section*/
+  #pricing {
+    padding: 100px;
+  }
+  
+  .pricing-column {
+    padding: 3% 2%;
+  }
+  
+  .price-subheading {
+    padding: 1% 2% 3%;
+  }
+  
+  .card {
+    margin-top: 1%;
+  }
+  
+  .price-text {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  
+  #cta .btn-light {
+  	background-color: #eaeaea;
+  	color: #000;
+  	border: none;
+  }
+ 
+  /*Footer section*/
+  
+  #footer i {
+    padding: 0.8%;
+  }
+  
+  .copyright {
+    font-size: 0.8rem;
+    padding-top: 5px;
+  }
+  
+  @media (max-width: 1028px) {
+  	
+  	#title {
+  		height: 150vh;
+  	}
+  	
+  }
