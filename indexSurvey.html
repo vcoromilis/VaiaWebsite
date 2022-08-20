@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <script src="https://kit.fontawesome.com/e87d687bba.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/css/styleSurvey.css" />
+
+ 
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <div id="wrapper-main">
+    <header role = "banner">
+      <div class="d-flex-row">
+        <div id="wrapper-title" class="wrapper-title">
+          <h1 id="title">Survey</h1>
+          <p id="description">
+          Your feedback is appreciated.<br />
+          Please fill out our survey.
+          </p>
+        </div>
+        
+      </div>
+    </header>
+    <main role="main">
+      <form id="survey-form">
+        <div id="wrapper-form-info">
+          <section class="container-name">
+            <div class="d-flex-row">
+              <div class="d-flex-column two-column">
+                <label id="name-label" for="name">First Name</label>
+                <input type="text" class="font-form" name="name" id="name" placeholder="Enter your first name"
+                  required />
+              </div>
+              <div class="d-flex-column two-column">
+                <label id="name-label" for="name">Last Name</label>
+                <input type="text" class="font-form" name="name" id="name" placeholder="Enter your last name" required />
+              </div>
+            </div>
+          </section>
+          <section class="container-email">
+            <div>
+              <div class="d-flex-column">
+                <label id="email-label" for="email">Email Address</label>
+                <input type="email" class="font-form" name="email" id="email" placeholder="Enter your email address"
+                  required />
+              </div>
+            </div>
+          </section>
+          <section class="container-dropdown-number">
+            <div class="form-group d-flex-row">
+              <div class="d-flex-column two-column">
+                <label for="dropdown">Gender</label>
+                <select class="font-form" name="dropdown" id="dropdown">
+                  <option disabled selected>Select your Gender</option>
+                  <option value="female">Female</option>
+                  <option value="male">Male</option>
+                  
+                </select>
+              </div>
+
+              <div class="d-flex-column two-column">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" class="font-form" min="18" max="100" name="age" id="number" placeholder="Age"
+                  required />
+              </div>
+            </div>
+          </section>
+          <section class="container-radio">
+            <div>
+              <legend>How would you rate our Services?</legend>
+              <div id="selection" class="d-grid font-form">
+                <div class="wrapper-radio">
+                  <input type="radio" class="radio" id="radio-excellent" name="radio" value="Excellent" />
+                  <label for="radio-excellent" class="radio-label">Excellent</label>
+                </div>
+                <div class="wrapper-radio">
+                  <input type="radio" class="radio" id="radio-very-good" name="radio" value="Very Good" />
+                  <label for="radio-very-good" class="radio-label">Very Good</label>
+                </div>
+                <div class="wrapper-radio">
+                  <input type="radio" class="radio" id="radio-good" name="radio" value="Good" />
+                  <label for="radio-good" class="radio-label">Good</label>
+                </div>
+                <div class="wrapper-radio">
+                  <input type="radio" class="radio" id="radio-fair" name="radio" value="Fair" />
+                  <label for="radio-fair" class="radio-label">Fair</label>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="container-checkbox">
+            <div>
+              <legend>Please indicate what can be improved?</legend>
+              <div class="d-grid font-form">
+                <div class="wrapper-checkbox">
+                  <input type="checkbox" class="checkbox" id="selection-service" name="checkbox" value="Service" />
+                  <label for="selection-service" class="checkbox-label">Services</label>
+                </div>
+                <div class="wrapper-checkbox">
+                  <input type="checkbox" class="checkbox" id="selection-rooms" name="checkbox" value="Rooms" />
+                  <label for="selection-rooms" class="checkbox-label">Location</label>
+                </div>
+                <div class="wrapper-checkbox">
+                  <input type="checkbox" class="checkbox" id="selection-over-all" name="checkbox"
+                    value="Over all view of the place" />
+                  <label for="selection-over-all" class="checkbox-label">Premises</label>
+                </div>
+                
+                <div class="wrapper-checkbox">
+                  <input type="checkbox" class="checkbox" id="selection-personel" name="checkbox" value="Personel" />
+                  <label for="selection-personel" class="checkbox-label">Personel</label>
+                </div>
+                
+              </div>
+            </div>
+          </section>
+          <section class="container-comments">
+            <div>
+              <div class="d-flex-column">
+                <label for="comments" class="comments-label">Comments:</label>
+                <textarea class="font-form" name="comments" id="comments"
+                  placeholder="Share your thoughts!"></textarea>
+              </div>
+            </div>
+          </section>
+          <section class="container-button">
+            <div class="wrapper-button">
+              <button id="submit">Submit</button>
+            </div>
+          </section>
+        </div>
+      </form>
+    </main>
+
+    
+
+    
+  </div>
+</body>
+</html>
