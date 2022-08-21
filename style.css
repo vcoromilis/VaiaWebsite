@@ -230,3 +230,16 @@ header {
   }
 }
 
+.title-section {
+  justify-content: center;
+  align-items: center;
+}
+.title-section h2 {
+  font-size: 48px;
+}
+.title-section h3,
+.text-contact-section h3,
+.text-projects-section h3 {
+  font-size: 40px;
+  line-height: 45px;
+}
