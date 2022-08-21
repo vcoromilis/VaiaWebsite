@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+:root {
+  --background-header: #410fcbfd;
+  --background-menu: #a7a5d4;
+  --background-home: linear-gradient(
+    180deg,
+    #bdbce1 0%,
+    #9699de 48.39%,
+    #636ce5 71.89%,
+    #4d09d4 100%
+  );
+  --background-project-section: linear-gradient(
+    180deg,
+    #beb0e8 0%,
+    #afacc7 100%
+  );
+  --white: #ffffff;
+  --white-light: rgba(224, 224, 224, 0.24);
+  --white-light-font: rgba(255, 255, 255, 0.75);
+  --grey-medium: #767676;
+  --button-color: #c555dc;
+  --border: solid 2px var(--white-light-font);
+  
+  --font-family-title: "Arima Madurai";
+  --font-family-text: "Poppins";
+  --box-shadow: -2px -2px 40px rgba(92, 80, 85, 0.1), 10px 10px 20px rgba(92, 80, 85, 0.5);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+h1,
+h2,
+h4 {
+  font-family: var(--font-family-title);
+  font-weight: 700;
+}
+h3 {
+  font-family: var(--font-family-title);
+  font-weight: 400;
+}
+p,
+a,
+label,
+button,
+textarea,
+input {
+  font-family: var(--font-family-text);
+  font-weight: 200;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  z-index: 2;
+  background: var(--background-header);
+}
+.wrapper-header {
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10%;
+  z-index: 9999;
+}
+
+
+
+
+.wrapper-header .logo {
+  padding-top: 5px;
+  font-family: var(--font-family-title);
+  font-weight: 500;
+  font-size: 40px;
+  color: var(--white);
+  cursor: default;
+}
+.wrapper-header .icon {
+  cursor: pointer;
+  border-color: var(--white);
+  
+  font-family: var(--font-family-text);
+  font-weight: 300;
+  font-size: 20px;
+
+  color: var(--white);
+}
+.wrapper-header .icon .icon-menu {
+  padding: 15px 5px 15px 15px;
+}
+.wrapper-header .icon .icon-p {
+  padding: 22px 0 15px 5px;
+}
+.wrapper-header .icon .icon-p .p-1 {
+  width: 30px;
+  height: 2px;
+  background-color: var(--white);
+  transition: 0.3s;
+}
+.wrapper-header .icon .icon-p .p-2 {
+  width: 30px;
+  height: 2px;
+  background-color: var(--white);
+  margin: 5px 0;
+  transition: 0.3s;
+}
+.wrapper-header .icon .icon-p .p-3 {
+  width: 30px;
+  height: 2px;
+  background-color: var(--white);
+  transition: 0.3s;
+}
+
+.wrapper-header .menu {
+  position: absolute;
+  top: 0;
+  
+  background-color: var(--background-menu);
+  width: 47vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+}
+.wrapper-header .menu li + li {
+  margin-top: 30px;
+}
+.wrapper-header .menu li {
+  padding: 30px;
+}
+.wrapper-header .menu ul li {
+  list-style-type: none;
+}
+.wrapper-header .menu a {
+  color: var(--white);
+  font-family: var(--font-family-title);
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 29px;
+  padding: 25px;
+}
+#welcome-section {
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background: var(--background-home);
+}
+#welcome-section #title-welcome-section {
+  position: absolute;
+  width: 100%;
+  top: 28%;
+  justify-content: center;
+  color: var(--white);
+}
+#welcome-section #title-welcome-section .wrapper-title-welcome-section {
+  align-items: center;
+}
+#welcome-section #title-welcome-section .wrapper-title-welcome-section h1 {
+  font-size: 72px;
+  animation: opacity1 4s;
+}
+@keyframes opacity1 {
+  0% {
+    opacity: 0.1;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#welcome-section #title-welcome-section .wrapper-title-welcome-section p {
+  font-family: var(--font-family-title);
+  font-weight: 200;
+  font-size: 48px;
+  animation: opacity2 4s;
+}
+@keyframes opacity2 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#welcome-section #title-welcome-section .wrapper-title-welcome-section h2 {
+  font-size: 48px;
+  padding: 0 0 20px 10px;
+  animation: opacity2 4s;
+}
+#welcome-section #title-welcome-section .wrapper-title-welcome-section h3 {
+  font-size: 36px;
+  animation: opacity3 4s;
+}
+@keyframes opacity3 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.1;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
