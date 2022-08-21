@@ -243,3 +243,33 @@ header {
   font-size: 40px;
   line-height: 45px;
 }
+#about-section {
+  width: 100%;
+  height: auto;
+  margin: 90px 0;
+  background-color: var(--white);
+  color: var(--grey-medium);
+  position: relative;
+  z-index: 1;
+}
+#about-section #text-about-section {
+  margin: 50px 10% 0 10%;
+}
+#about-section #text-about-section p,
+.title-section p,
+.text-projects-section a {
+  line-height: 45px;
+  font-size: 30px;
+}
+#about-section:after {
+  background-repeat: no-repeat;
+  background-size: cover center;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  bottom: -25em;
+  height: 312px;
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1920 312" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 99 C 454 99 454 249 908 249 L 908 249 L 908 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 907 249 C 1413.5 249 1413.5 99 1920 99 L 1920 99 L 1920 0 L 907 0 Z" stroke-width="0"></path> </svg>');
+}
